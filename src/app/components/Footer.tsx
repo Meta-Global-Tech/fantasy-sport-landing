@@ -83,18 +83,30 @@ export default function Footer() {
                   Terms of Service
                 </Link>
               </li>
-              {["Privacy Policy", "Fair Play Policy", "Contact Us"].map(
-                (item) => (
-                  <li key={item}>
-                    <a
-                      href="#"
-                      className="text-white/40 hover:text-white text-sm transition-colors"
-                    >
-                      {item}
-                    </a>
-                  </li>
-                ),
-              )}
+              <li>
+                <Link
+                  href="/privacy"
+                  className="text-white/40 hover:text-white text-sm transition-colors"
+                >
+                  Privacy Policy
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/fair-play"
+                  className="text-white/40 hover:text-white text-sm transition-colors"
+                >
+                  Fair Play Policy
+                </Link>
+              </li>
+              <li>
+                <a
+                  href="mailto:support@procrick.com"
+                  className="text-white/40 hover:text-white text-sm transition-colors"
+                >
+                  Contact Us
+                </a>
+              </li>
             </ul>
           </div>
         </div>
@@ -111,17 +123,23 @@ export default function Footer() {
             responsibly.
           </p>
           <div className="flex gap-4">
-            <a
-              href="#"
+            <Link
+              href="/privacy"
               className="text-white/25 hover:text-white/60 text-sm transition-colors"
             >
               Privacy
-            </a>
+            </Link>
             <Link
               href="/terms"
               className="text-white/25 hover:text-white/60 text-sm transition-colors"
             >
               Terms
+            </Link>
+            <Link
+              href="/fair-play"
+              className="text-white/25 hover:text-white/60 text-sm transition-colors"
+            >
+              Fair Play
             </Link>
           </div>
         </div>
