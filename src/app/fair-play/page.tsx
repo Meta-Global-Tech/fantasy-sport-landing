@@ -147,7 +147,7 @@ export default function FairPlayPage() {
                   these policies, please report it immediately to our integrity
                   team at{" "}
                   <span className="text-green-neon underline">
-                    integrity@procrick.com
+                    support@procrick.com
                   </span>
                   .
                 </p>

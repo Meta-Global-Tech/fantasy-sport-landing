@@ -158,7 +158,7 @@ export default function PrivacyPolicyPage() {
                   If you have any questions or concerns regarding our Privacy
                   Policy, please reach out to us at{" "}
                   <span className="text-green-neon underline">
-                    privacy@procrick.com
+                    support@procrick.com
                   </span>
                   .
                 </p>
