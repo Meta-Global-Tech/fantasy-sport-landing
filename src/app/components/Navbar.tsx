@@ -64,6 +64,12 @@ export default function Navbar() {
           >
             Prizes
           </a>
+          <Link
+            href="/rules"
+            className="text-white/70 hover:text-white text-sm font-medium transition-colors"
+          >
+            Rules
+          </Link>
           <a
             href="/#download"
             className="text-white/70 hover:text-white text-sm font-medium transition-colors"
@@ -123,6 +129,13 @@ export default function Navbar() {
           >
             Prizes
           </a>
+          <Link
+            href="/rules"
+            className="text-white/80 hover:text-white py-2 border-b border-white/5"
+            onClick={() => setMenuOpen(false)}
+          >
+            Rules
+          </Link>
           <a
             href="/#download"
             className="text-white/80 hover:text-white py-2"

@@ -52,19 +52,20 @@ export default function Footer() {
             </h4>
             <ul className="space-y-3">
               {[
-                "How It Works",
-                "Features",
-                "Contests",
-                "Leaderboard",
-                "Live Scores",
+                { name: "How It Works", href: "#" },
+                { name: "Scoring Rules", href: "/rules" },
+                { name: "Features", href: "#" },
+                { name: "Contests", href: "#" },
+                { name: "Leaderboard", href: "#" },
+                { name: "Live Scores", href: "#" },
               ].map((item) => (
-                <li key={item}>
-                  <a
-                    href="#"
+                <li key={item.name}>
+                  <Link
+                    href={item.href}
                     className="text-white/40 hover:text-white text-sm transition-colors"
                   >
-                    {item}
-                  </a>
+                    {item.name}
+                  </Link>
                 </li>
               ))}
             </ul>
