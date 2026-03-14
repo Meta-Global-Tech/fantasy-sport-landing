@@ -5,7 +5,7 @@ const prizeStructure = [
   {
     rank: "1st Place",
     icon: Crown,
-    prize: "USD 10",
+    prize: "USD 500",
     color: "#fbbf24",
     bgColor: "rgba(251, 191, 36, 0.1)",
     border: "rgba(251, 191, 36, 0.25)",
@@ -13,7 +13,7 @@ const prizeStructure = [
   {
     rank: "2nd Place",
     icon: Medal,
-    prize: "USD 5",
+    prize: "USD 200",
     color: "#94a3b8",
     bgColor: "rgba(148, 163, 184, 0.08)",
     border: "rgba(148, 163, 184, 0.2)",
@@ -21,7 +21,7 @@ const prizeStructure = [
   {
     rank: "3rd Place",
     icon: Medal,
-    prize: "USD 3",
+    prize: "USD 100",
     color: "#cd7f32",
     bgColor: "rgba(205, 127, 50, 0.08)",
     border: "rgba(205, 127, 50, 0.2)",
@@ -29,9 +29,27 @@ const prizeStructure = [
 ];
 
 const recentWinners = [
-  { name: "Sachin W.", team: "Team #8039", points: 741, prize: "USD 10", rank: 1 },
-  { name: "Sachin W.", team: "Team #5777", points: 547, prize: "USD 5", rank: 2 },
-  { name: "Sachin W.", team: "Team #3241", points: 531, prize: "USD 3", rank: 3 },
+  {
+    name: "Sachin W.",
+    team: "Team #8039",
+    points: 741,
+    prize: "USD 500",
+    rank: 1,
+  },
+  {
+    name: "Aruna G.",
+    team: "Team #5777",
+    points: 547,
+    prize: "USD 200",
+    rank: 2,
+  },
+  {
+    name: "Anderson P.",
+    team: "Team #3241",
+    points: 531,
+    prize: "USD 100",
+    rank: 3,
+  },
   { name: "Raj P.", team: "Team #7395", points: 189, prize: "—", rank: 4 },
 ];
 
@@ -42,7 +60,8 @@ export default function Prizes() {
       <div
         className="absolute inset-0 pointer-events-none"
         style={{
-          background: "linear-gradient(180deg, var(--navy-950) 0%, var(--navy-900) 50%, var(--navy-950) 100%)",
+          background:
+            "linear-gradient(180deg, var(--navy-950) 0%, var(--navy-900) 50%, var(--navy-950) 100%)",
         }}
       />
       <div className="orb orb-gold w-[400px] h-[400px] top-0 right-0 opacity-20" />
@@ -66,11 +85,16 @@ export default function Prizes() {
               >
                 <div className="flex items-center gap-3">
                   <Trophy size={20} style={{ color: "#fbbf24" }} />
-                  <span className="font-display text-xl tracking-wide">LEADERBOARD</span>
+                  <span className="font-display text-xl tracking-wide">
+                    LEADERBOARD
+                  </span>
                 </div>
                 <span
                   className="text-xs px-3 py-1 rounded-full font-semibold"
-                  style={{ background: "rgba(0,230,118,0.15)", color: "var(--green-neon)" }}
+                  style={{
+                    background: "rgba(0,230,118,0.15)",
+                    color: "var(--green-neon)",
+                  }}
                 >
                   SA vs NZ · Completed
                 </span>
@@ -82,19 +106,27 @@ export default function Prizes() {
                 style={{ borderBottom: "1px solid rgba(255,255,255,0.06)" }}
               >
                 {[
-                  { label: "Prize Pool", val: "$18" },
-                  { label: "Entry Fee", val: "USD 2" },
-                  { label: "Players", val: "4" },
+                  { label: "Prize Pool", val: "$800" },
+                  { label: "Entry Fee", val: "USD 10" },
+                  { label: "Players", val: "400" },
                 ].map((item, i) => (
                   <div
                     key={i}
                     className="py-4 text-center"
-                    style={{ borderRight: i < 2 ? "1px solid rgba(255,255,255,0.06)" : "none" }}
+                    style={{
+                      borderRight:
+                        i < 2 ? "1px solid rgba(255,255,255,0.06)" : "none",
+                    }}
                   >
-                    <div className="font-bold text-lg" style={{ color: i === 0 ? "#fbbf24" : "white" }}>
+                    <div
+                      className="font-bold text-lg"
+                      style={{ color: i === 0 ? "#fbbf24" : "white" }}
+                    >
                       {item.val}
                     </div>
-                    <div className="text-white/40 text-xs mt-0.5">{item.label}</div>
+                    <div className="text-white/40 text-xs mt-0.5">
+                      {item.label}
+                    </div>
                   </div>
                 ))}
               </div>
@@ -106,7 +138,10 @@ export default function Prizes() {
                     key={i}
                     className="flex items-center gap-4 py-3 px-2 rounded-xl transition-colors hover:bg-white/5"
                     style={{
-                      borderBottom: i < recentWinners.length - 1 ? "1px solid rgba(255,255,255,0.04)" : "none",
+                      borderBottom:
+                        i < recentWinners.length - 1
+                          ? "1px solid rgba(255,255,255,0.04)"
+                          : "none",
                     }}
                   >
                     {/* Rank */}
@@ -117,18 +152,18 @@ export default function Prizes() {
                           i === 0
                             ? "rgba(251,191,36,0.2)"
                             : i === 1
-                            ? "rgba(148,163,184,0.15)"
-                            : i === 2
-                            ? "rgba(205,127,50,0.15)"
-                            : "rgba(255,255,255,0.05)",
+                              ? "rgba(148,163,184,0.15)"
+                              : i === 2
+                                ? "rgba(205,127,50,0.15)"
+                                : "rgba(255,255,255,0.05)",
                         color:
                           i === 0
                             ? "#fbbf24"
                             : i === 1
-                            ? "#94a3b8"
-                            : i === 2
-                            ? "#cd7f32"
-                            : "rgba(255,255,255,0.3)",
+                              ? "#94a3b8"
+                              : i === 2
+                                ? "#cd7f32"
+                                : "rgba(255,255,255,0.3)",
                       }}
                     >
                       {winner.rank}
@@ -137,20 +172,28 @@ export default function Prizes() {
                     {/* Avatar */}
                     <div
                       className="w-8 h-8 rounded-full flex items-center justify-center text-xs font-bold flex-shrink-0"
-                      style={{ background: "rgba(0,230,118,0.2)", color: "var(--green-neon)" }}
+                      style={{
+                        background: "rgba(0,230,118,0.2)",
+                        color: "var(--green-neon)",
+                      }}
                     >
                       SW
                     </div>
 
                     {/* Name */}
                     <div className="flex-1 min-w-0">
-                      <div className="font-semibold text-sm text-white truncate">{winner.name}</div>
+                      <div className="font-semibold text-sm text-white truncate">
+                        {winner.name}
+                      </div>
                       <div className="text-white/40 text-xs">{winner.team}</div>
                     </div>
 
                     {/* Points */}
                     <div className="text-right">
-                      <div className="font-bold text-sm" style={{ color: "var(--green-neon)" }}>
+                      <div
+                        className="font-bold text-sm"
+                        style={{ color: "var(--green-neon)" }}
+                      >
                         {winner.points}
                       </div>
                       <div className="text-white/40 text-xs">pts</div>
@@ -159,7 +202,12 @@ export default function Prizes() {
                     {/* Prize */}
                     <div
                       className="text-sm font-bold min-w-[50px] text-right"
-                      style={{ color: winner.prize !== "—" ? "#fbbf24" : "rgba(255,255,255,0.2)" }}
+                      style={{
+                        color:
+                          winner.prize !== "—"
+                            ? "#fbbf24"
+                            : "rgba(255,255,255,0.2)",
+                      }}
                     >
                       {winner.prize}
                     </div>
@@ -183,7 +231,9 @@ export default function Prizes() {
               WIN CASH
             </h2>
             <p className="text-white/55 text-lg leading-relaxed mb-10">
-              Every contest has a prize pool distributed across top performers. The smarter your team selection, the higher you rank — and the more you earn.
+              Every contest has a prize pool distributed across top performers.
+              The smarter your team selection, the higher you rank — and the
+              more you earn.
             </p>
 
             {/* Prize cards */}
@@ -206,14 +256,21 @@ export default function Prizes() {
                   <div className="flex-1">
                     <div className="font-semibold text-white">{prize.rank}</div>
                   </div>
-                  <div className="font-display text-2xl" style={{ color: prize.color }}>
+                  <div
+                    className="font-display text-2xl"
+                    style={{ color: prize.color }}
+                  >
                     {prize.prize}
                   </div>
                 </div>
               ))}
             </div>
 
-            <Link href="https://app.procrick.com" target="_blank" className="btn-primary">
+            <Link
+              href="https://app.procrick.com"
+              target="_blank"
+              className="btn-primary"
+            >
               Join a Contest Now
             </Link>
           </div>

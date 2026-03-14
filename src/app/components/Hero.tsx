@@ -5,8 +5,13 @@ import Link from "next/link";
 import { ArrowRight, Play, Trophy, Users, TrendingUp } from "lucide-react";
 
 const floatingStats = [
-  { label: "Prize Pool", value: "USD 31", icon: Trophy, color: "#fbbf24" },
-  { label: "Live Matches", value: "3 Active", icon: TrendingUp, color: "#00e676" },
+  { label: "Prize Pool", value: "USD 1000", icon: Trophy, color: "#fbbf24" },
+  {
+    label: "Live Matches",
+    value: "3 Active",
+    icon: TrendingUp,
+    color: "#00e676",
+  },
   { label: "Players Online", value: "12.4K", icon: Users, color: "#60a5fa" },
 ];
 
@@ -32,14 +37,21 @@ export default function Hero() {
     <section className="relative min-h-screen flex items-center overflow-hidden hero-grid">
       {/* Background orbs */}
       <div className="orb orb-green w-[600px] h-[600px] -top-32 -left-32 opacity-60" />
-      <div className="orb orb-blue w-[500px] h-[500px] top-1/4 -right-48 opacity-50" style={{ animationDelay: "3s" }} />
-      <div className="orb orb-gold w-[300px] h-[300px] bottom-1/4 left-1/3 opacity-30" style={{ animationDelay: "5s" }} />
+      <div
+        className="orb orb-blue w-[500px] h-[500px] top-1/4 -right-48 opacity-50"
+        style={{ animationDelay: "3s" }}
+      />
+      <div
+        className="orb orb-gold w-[300px] h-[300px] bottom-1/4 left-1/3 opacity-30"
+        style={{ animationDelay: "5s" }}
+      />
 
       {/* Radial fade overlay */}
       <div
         className="absolute inset-0 pointer-events-none"
         style={{
-          background: "radial-gradient(ellipse 80% 70% at 50% 50%, transparent 20%, var(--navy-950) 80%)",
+          background:
+            "radial-gradient(ellipse 80% 70% at 50% 50%, transparent 20%, var(--navy-950) 80%)",
         }}
       />
 
@@ -63,7 +75,9 @@ export default function Hero() {
           </h1>
 
           <p className="text-white/60 text-lg leading-relaxed mb-10 max-w-md">
-            Build your dream squad, join high-stakes fantasy contests, and watch your picks dominate the leaderboard — with real cash prizes on the line.
+            Build your dream squad, join high-stakes fantasy contests, and watch
+            your picks dominate the leaderboard — with real cash prizes on the
+            line.
           </p>
 
           <div className="flex flex-wrap gap-4 mb-14">
@@ -75,10 +89,7 @@ export default function Hero() {
               Start Winning Free
               <ArrowRight size={20} />
             </Link>
-            <a
-              href="#how-it-works"
-              className="btn-secondary"
-            >
+            <a href="#how-it-works" className="btn-secondary">
               <Play size={18} />
               See How It Works
             </a>
@@ -87,22 +98,49 @@ export default function Hero() {
           {/* Trust badges */}
           <div className="flex flex-wrap items-center gap-6">
             <div className="flex items-center gap-2 text-white/50 text-sm">
-              <svg className="w-4 h-4 text-green-400" fill="currentColor" viewBox="0 0 20 20" style={{ color: "#4ade80" }}>
-                <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
+              <svg
+                className="w-4 h-4 text-green-400"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+                style={{ color: "#4ade80" }}
+              >
+                <path
+                  fillRule="evenodd"
+                  d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                  clipRule="evenodd"
+                />
               </svg>
               Free to join
             </div>
             <div className="flex items-center gap-2 text-white/50 text-sm">
-              <svg className="w-4 h-4 text-green-400" fill="currentColor" viewBox="0 0 20 20" style={{ color: "#4ade80" }}>
-                <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
+              <svg
+                className="w-4 h-4 text-green-400"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+                style={{ color: "#4ade80" }}
+              >
+                <path
+                  fillRule="evenodd"
+                  d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                  clipRule="evenodd"
+                />
               </svg>
               Instant payouts
             </div>
             <div className="flex items-center gap-2 text-white/50 text-sm">
-              <svg className="w-4 h-4 text-green-400" fill="currentColor" viewBox="0 0 20 20" style={{ color: "#4ade80" }}>
-                <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
+              <svg
+                className="w-4 h-4 text-green-400"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+                style={{ color: "#4ade80" }}
+              >
+                <path
+                  fillRule="evenodd"
+                  d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                  clipRule="evenodd"
+                />
               </svg>
-              iOS &amp; Android
+              iOS &amp; Android (Soon)
             </div>
           </div>
         </div>
@@ -110,21 +148,23 @@ export default function Hero() {
         {/* Right: Mockup / Visual */}
         <div className="relative flex justify-center items-center">
           {/* Cricket ball */}
-          <div
-            ref={ballRef}
-            className="absolute top-8 right-16 z-10"
-          >
+          <div ref={ballRef} className="absolute top-8 right-16 z-10">
             <div
               className="w-20 h-20 rounded-full shadow-2xl flex items-center justify-center"
               style={{
-                background: "radial-gradient(circle at 35% 35%, #ef4444, #b91c1c, #7f1d1d)",
-                boxShadow: "0 0 40px rgba(239, 68, 68, 0.5), inset -6px -6px 15px rgba(0,0,0,0.4)",
+                background:
+                  "radial-gradient(circle at 35% 35%, #ef4444, #b91c1c, #7f1d1d)",
+                boxShadow:
+                  "0 0 40px rgba(239, 68, 68, 0.5), inset -6px -6px 15px rgba(0,0,0,0.4)",
               }}
             >
               <div className="w-full h-full rounded-full relative overflow-hidden">
                 <div
                   className="absolute top-1/2 left-0 right-0 h-px"
-                  style={{ background: "rgba(255,255,255,0.3)", boxShadow: "0 2px 0 rgba(255,255,255,0.1)" }}
+                  style={{
+                    background: "rgba(255,255,255,0.3)",
+                    boxShadow: "0 2px 0 rgba(255,255,255,0.1)",
+                  }}
                 />
               </div>
             </div>
@@ -138,7 +178,9 @@ export default function Hero() {
             {/* Match card */}
             <div
               className="rounded-2xl p-6 overflow-hidden"
-              style={{ background: "linear-gradient(135deg, #0f1f38, #162845)" }}
+              style={{
+                background: "linear-gradient(135deg, #0f1f38, #162845)",
+              }}
             >
               {/* Match header */}
               <div className="flex items-center justify-between mb-4">
@@ -147,9 +189,15 @@ export default function Hero() {
                 </span>
                 <span
                   className="text-xs font-bold px-2 py-1 rounded-full flex items-center gap-1"
-                  style={{ background: "rgba(0, 230, 118, 0.15)", color: "var(--green-neon)" }}
+                  style={{
+                    background: "rgba(0, 230, 118, 0.15)",
+                    color: "var(--green-neon)",
+                  }}
                 >
-                  <span className="w-1.5 h-1.5 rounded-full live-dot" style={{ background: "var(--green-neon)" }} />
+                  <span
+                    className="w-1.5 h-1.5 rounded-full live-dot"
+                    style={{ background: "var(--green-neon)" }}
+                  />
                   READY
                 </span>
               </div>
@@ -158,7 +206,9 @@ export default function Hero() {
               <div className="flex items-center justify-between py-4">
                 <div className="text-center">
                   <div className="text-4xl mb-2">🇮🇳</div>
-                  <div className="font-display text-2xl tracking-wider">IND</div>
+                  <div className="font-display text-2xl tracking-wider">
+                    IND
+                  </div>
                 </div>
                 <div className="text-center">
                   <div
@@ -170,7 +220,9 @@ export default function Hero() {
                 </div>
                 <div className="text-center">
                   <div className="text-4xl mb-2">🏴󠁧󠁢󠁥󠁮󠁧󠁿</div>
-                  <div className="font-display text-2xl tracking-wider">ENG</div>
+                  <div className="font-display text-2xl tracking-wider">
+                    ENG
+                  </div>
                 </div>
               </div>
 
@@ -182,7 +234,12 @@ export default function Hero() {
                 </div>
                 <div className="text-center">
                   <div className="text-white/40 text-xs mb-1">Prize Pool</div>
-                  <div className="font-bold" style={{ color: "var(--green-neon)" }}>USD 31</div>
+                  <div
+                    className="font-bold"
+                    style={{ color: "var(--green-neon)" }}
+                  >
+                    USD 1000
+                  </div>
                 </div>
                 <div className="text-center">
                   <div className="text-white/40 text-xs mb-1">Date</div>
@@ -215,8 +272,8 @@ export default function Hero() {
                 ...(i === 0
                   ? { top: "10%", right: "-10%" }
                   : i === 1
-                  ? { bottom: "25%", left: "-12%" }
-                  : { bottom: "5%", right: "5%" }),
+                    ? { bottom: "25%", left: "-12%" }
+                    : { bottom: "5%", right: "5%" }),
                 animationDelay: `${i * 2}s`,
                 boxShadow: "0 10px 30px rgba(0,0,0,0.4)",
               }}
@@ -239,7 +296,10 @@ export default function Hero() {
       {/* Bottom fade */}
       <div
         className="absolute bottom-0 left-0 right-0 h-32 pointer-events-none"
-        style={{ background: "linear-gradient(to bottom, transparent, var(--navy-950))" }}
+        style={{
+          background:
+            "linear-gradient(to bottom, transparent, var(--navy-950))",
+        }}
       />
     </section>
   );
