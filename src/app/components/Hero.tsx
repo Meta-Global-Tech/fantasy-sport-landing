@@ -5,14 +5,14 @@ import Link from "next/link";
 import { ArrowRight, Play, Trophy, Users, TrendingUp } from "lucide-react";
 
 const floatingStats = [
-  { label: "Prize Pool", value: "USD 1000", icon: Trophy, color: "#fbbf24" },
+  { label: "Prize Pool", value: "USD 200", icon: Trophy, color: "#fbbf24" },
   {
     label: "Live Matches",
     value: "3 Active",
     icon: TrendingUp,
     color: "#00e676",
   },
-  { label: "Players Online", value: "12.4K", icon: Users, color: "#60a5fa" },
+  { label: "Players Online", value: "1.2K", icon: Users, color: "#60a5fa" },
 ];
 
 export default function Hero() {
@@ -238,7 +238,7 @@ export default function Hero() {
                     className="font-bold"
                     style={{ color: "var(--green-neon)" }}
                   >
-                    USD 1000
+                    USD 200
                   </div>
                 </div>
                 <div className="text-center">

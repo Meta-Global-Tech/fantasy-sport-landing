@@ -1,8 +1,8 @@
 const stats = [
-  { value: "$500K+", label: "Total Prizes Paid" },
-  { value: "50K+", label: "Active Players" },
-  { value: "200+", label: "Contests Hosted" },
-  { value: "4.8★", label: "App Rating" },
+  { value: "$50K+", label: "Total Prizes Paid" },
+  { value: "1K+", label: "Active Players" },
+  { value: "100+", label: "Contests Hosted" },
+  // { value: "4.8★", label: "App Rating" },
   { value: "T20 & ODI", label: "Match Formats" },
   { value: "24/7", label: "Live Scores" },
 ];
@@ -14,7 +14,8 @@ export default function StatsBanner() {
     <section
       className="relative py-6 overflow-hidden"
       style={{
-        background: "linear-gradient(135deg, rgba(0, 230, 118, 0.08), rgba(22, 40, 69, 0.8))",
+        background:
+          "linear-gradient(135deg, rgba(0, 230, 118, 0.08), rgba(22, 40, 69, 0.8))",
         borderTop: "1px solid rgba(0, 230, 118, 0.15)",
         borderBottom: "1px solid rgba(0, 230, 118, 0.15)",
       }}
