@@ -10,22 +10,14 @@ export default function Footer() {
         <div className="grid md:grid-cols-4 gap-10 mb-12">
           {/* Brand */}
           <div className="md:col-span-2">
-            <div className="flex items-center gap-2 mb-4">
-              <div
-                className="w-9 h-9 rounded-lg flex items-center justify-center"
-                style={{ background: "var(--green-neon)" }}
-              >
-                <span
-                  className="font-display text-xl"
-                  style={{ color: "#060d1a" }}
-                >
-                  PRO
-                </span>
-              </div>
-              <span className="font-display text-2xl tracking-widest">
-                CRICK
-              </span>
-            </div>
+            <Link href="/" className="flex items-center gap-2 mb-4">
+              <img
+                style={{ height: "200px", width: "200px" }}
+                src="/logo-square.png"
+                alt="ProCrick Logo"
+                className="h-10 w-auto object-contain"
+              />
+            </Link>
             <p className="text-white/40 text-sm leading-relaxed max-w-xs">
               The ultimate fantasy cricket platform for fans who know the game.
               Build teams, join contests, win real cash.
@@ -99,7 +91,8 @@ export default function Footer() {
               </li>
               <li>
                 <a
-                  href="mailto:support@procrick.com"
+                  href="https://wa.me/message/OWJ573CL52ZKA1"
+                  target="_blank"
                   className="text-white/40 hover:text-white text-sm transition-colors"
                 >
                   Contact Us

@@ -25,23 +25,11 @@ export default function Navbar() {
       <div className="max-w-7xl mx-auto px-6 flex items-center justify-between">
         {/* Logo */}
         <Link href="/" className="flex items-center gap-2">
-          <div
-            className="w-9 h-9 rounded-lg flex items-center justify-center"
-            style={{ background: "var(--green-neon)" }}
-          >
-            <span
-              className="font-display text-xl text-navy-950"
-              style={{ color: "#060d1a" }}
-            >
-              PRO
-            </span>
-          </div>
-          <span
-            className="font-display text-2xl tracking-widest"
-            style={{ letterSpacing: "0.2em" }}
-          >
-            CRICK
-          </span>
+          <img
+            src="/logo.png"
+            alt="ProCrick Logo"
+            className="h-10 w-auto object-contain"
+          />
         </Link>
 
         {/* Desktop Nav */}
