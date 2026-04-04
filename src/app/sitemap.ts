@@ -12,6 +12,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     '/privacy',
     '/rules',
     '/terms',
+    '/delete-account',
   ];
 
   return routes.map((route) => ({

@@ -90,6 +90,14 @@ export default function Footer() {
                 </Link>
               </li>
               <li>
+                <Link
+                  href="/delete-account"
+                  className="text-white/40 hover:text-white text-sm transition-colors"
+                >
+                  Delete Data
+                </Link>
+              </li>
+              <li>
                 <a
                   href="https://wa.me/message/OWJ573CL52ZKA1"
                   target="_blank"
@@ -131,6 +139,12 @@ export default function Footer() {
               className="text-white/25 hover:text-white/60 text-sm transition-colors"
             >
               Fair Play
+            </Link>
+            <Link
+              href="/delete-account"
+              className="text-white/25 hover:text-white/60 text-sm transition-colors"
+            >
+              Delete Data
             </Link>
           </div>
         </div>

@@ -1,0 +1,163 @@
+"use client";
+
+import { useState } from "react";
+import Navbar from "../components/Navbar";
+import Footer from "../components/Footer";
+
+export default function DeleteAccountPage() {
+  const [submitted, setSubmitted] = useState(false);
+  const [formData, setFormData] = useState({
+    name: "",
+    email: "",
+    reason: "",
+    confirm: false,
+  });
+
+  const handleSubmit = (e: React.FormEvent) => {
+    e.preventDefault();
+    // In a real app, you would send this to your API
+    console.log("Deletion request:", formData);
+    setSubmitted(true);
+  };
+
+  return (
+    <main className="min-h-screen bg-navy-950 text-white selection:bg-green-neon/30">
+      <Navbar />
+
+      {/* Background Orbs */}
+      <div className="fixed inset-0 overflow-hidden pointer-events-none">
+        <div className="orb orb-green w-[500px] h-[500px] -top-24 -left-24 opacity-20" />
+        <div className="orb orb-blue w-[600px] h-[600px] top-1/2 -right-24 opacity-10" />
+      </div>
+
+      <div className="relative z-10 pt-32 pb-20 px-6">
+        <div className="max-w-3xl mx-auto">
+          <div className="mb-12 text-center">
+            <div className="section-tag mb-4">Account Management</div>
+            <h1 className="font-display text-5xl md:text-7xl mb-6">
+              Delete <span className="text-gradient-green">Account</span>
+            </h1>
+            <p className="text-white/60 text-lg max-w-2xl mx-auto">
+              We're sorry to see you go. Please fill out the form below to request the deletion of your account and all associated data.
+            </p>
+          </div>
+
+          <div className="bg-glass rounded-3xl p-8 md:p-12 border border-white/10 backdrop-blur-xl">
+            {submitted ? (
+              <div className="text-center py-10">
+                <div className="w-20 h-20 bg-green-neon/20 rounded-full flex items-center justify-center mx-auto mb-6">
+                  <svg
+                    className="w-10 h-10 text-green-neon"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth={2}
+                      d="M5 13l4 4L19 7"
+                    />
+                  </svg>
+                </div>
+                <h2 className="font-display text-3xl mb-4">Request Received</h2>
+                <p className="text-white/70 mb-8">
+                  Your request to delete your account has been submitted. Our team will process it within 30 days and you will receive a confirmation email once completed.
+                </p>
+                <a href="/" className="btn-primary">
+                  Return Home
+                </a>
+              </div>
+            ) : (
+              <form onSubmit={handleSubmit} className="space-y-6">
+                <div className="grid md:grid-cols-2 gap-6">
+                  <div className="space-y-2">
+                    <label className="text-sm font-semibold text-white/70 ml-1">
+                      Full Name
+                    </label>
+                    <input
+                      required
+                      type="text"
+                      placeholder="John Doe"
+                      className="w-full bg-white/5 border border-white/10 rounded-xl px-5 py-4 focus:outline-none focus:border-green-neon/50 focus:ring-1 focus:ring-green-neon/50 transition-all font-body"
+                      value={formData.name}
+                      onChange={(e) =>
+                        setFormData({ ...formData, name: e.target.value })
+                      }
+                    />
+                  </div>
+                  <div className="space-y-2">
+                    <label className="text-sm font-semibold text-white/70 ml-1">
+                      Email Address
+                    </label>
+                    <input
+                      required
+                      type="email"
+                      placeholder="john@example.com"
+                      className="w-full bg-white/5 border border-white/10 rounded-xl px-5 py-4 focus:outline-none focus:border-green-neon/50 focus:ring-1 focus:ring-green-neon/50 transition-all font-body"
+                      value={formData.email}
+                      onChange={(e) =>
+                        setFormData({ ...formData, email: e.target.value })
+                      }
+                    />
+                  </div>
+                </div>
+
+                <div className="space-y-2">
+                  <label className="text-sm font-semibold text-white/70 ml-1">
+                    Reason for Deletion (Optional)
+                  </label>
+                  <textarea
+                    rows={4}
+                    placeholder="Tell us why you're leaving..."
+                    className="w-full bg-white/5 border border-white/10 rounded-xl px-5 py-4 focus:outline-none focus:border-green-neon/50 focus:ring-1 focus:ring-green-neon/50 transition-all font-body resize-none"
+                    value={formData.reason}
+                    onChange={(e) =>
+                      setFormData({ ...formData, reason: e.target.value })
+                    }
+                  />
+                </div>
+
+                <div className="flex items-start gap-3 p-4 bg-red-500/10 border border-red-500/20 rounded-xl">
+                  <input
+                    required
+                    type="checkbox"
+                    id="confirm"
+                    className="mt-1 w-4 h-4 rounded border-white/10 bg-white/5 text-green-neon focus:ring-green-neon focus:ring-offset-navy-950"
+                    checked={formData.confirm}
+                    onChange={(e) =>
+                      setFormData({ ...formData, confirm: e.target.checked })
+                    }
+                  />
+                  <label htmlFor="confirm" className="text-sm text-white/70 leading-relaxed cursor-pointer">
+                    I understand that deleting my account is permanent and all my data, including contest history, winnings, and preferences, will be permanently removed and cannot be recovered.
+                  </label>
+                </div>
+
+                <button
+                  type="submit"
+                  className="w-full btn-primary justify-center !py-5"
+                >
+                  Submit Deletion Request
+                </button>
+              </form>
+            )}
+          </div>
+
+          <div className="mt-12 text-center">
+            <p className="text-white/40 font-body text-sm mb-6">
+              Changed your mind? You can still keep your passion for cricket alive.
+            </p>
+            <div className="flex justify-center gap-4">
+              <a href="/" className="btn-secondary !text-base !px-6 !py-3">
+                Cancel & Go Home
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <Footer />
+    </main>
+  );
+}
