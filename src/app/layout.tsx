@@ -27,6 +27,11 @@ export const metadata: Metadata = {
     siteName: "ProCrick",
     type: "website",
   },
+  verification: {
+    other: {
+      "facebook-domain-verification": "a1oqrx97s864tiqdckscj92gidrghs",
+    },
+  },
 };
 
 export default function RootLayout({
