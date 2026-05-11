@@ -19,7 +19,7 @@ export default function TermsPage() {
             <h1 className="font-display text-5xl md:text-7xl mb-6">
               Terms of <span className="text-gradient-green">Service</span>
             </h1>
-            <p className="text-white/60 text-lg">Last Updated: March 6, 2026</p>
+            <p className="text-white/60 text-lg">Last Updated: May 11, 2026</p>
           </div>
 
           <div className="bg-glass rounded-3xl p-8 md:p-12 border border-white/10 backdrop-blur-xl">
@@ -85,10 +85,13 @@ export default function TermsPage() {
                 </h2>
                 <p className="text-white/70 leading-relaxed font-body">
                   You must be at least 18 years of age to participate in paid
-                  contests. Users from certain jurisdictions may be restricted
-                  from participating in paid contests due to local laws. It is
-                  your responsibility to ensure that your participation is legal
-                  in your current location.
+                  contests. ProCrick is currently <strong>not available</strong> to
+                  users residing in <strong>Sri Lanka</strong> and the{" "}
+                  <strong>United States of America (USA)</strong>. Users from
+                  certain other jurisdictions may also be restricted from
+                  participating in paid contests due to local laws. It is your
+                  responsibility to ensure that your participation is legal in
+                  your current location.
                 </p>
               </section>
 

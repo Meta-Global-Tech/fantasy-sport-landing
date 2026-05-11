@@ -19,7 +19,7 @@ export default function PrivacyPolicyPage() {
             <h1 className="font-display text-5xl md:text-7xl mb-6">
               Privacy <span className="text-gradient-green">Policy</span>
             </h1>
-            <p className="text-white/60 text-lg">Last Updated: March 6, 2026</p>
+            <p className="text-white/60 text-lg">Last Updated: May 11, 2026</p>
           </div>
 
           <div className="bg-glass rounded-3xl p-8 md:p-12 border border-white/10 backdrop-blur-xl">
