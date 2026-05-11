@@ -99,7 +99,7 @@ export default function Footer() {
               </li>
               <li>
                 <a
-                  href="https://wa.me/message/OWJ573CL52ZKA1"
+                  href="https://wa.me/94718818893"
                   target="_blank"
                   className="text-white/40 hover:text-white text-sm transition-colors"
                 >
