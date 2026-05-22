@@ -1,0 +1,15 @@
+[
+  {
+    "relation": [
+      "delegate_permission/common.handle_all_urls",
+      "delegate_permission/common.get_login_creds"
+    ],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "com.procrick.app",
+      "sha256_cert_fingerprints": [
+        "47:F2:CD:64:B0:EA:3E:C6:83:51:E0:5B:AA:62:2B:48:D2:44:DE:4A:4A:CF:0E:E9:8D:D5:6C:9B:97:F1:82:E4"
+      ]
+    }
+  }
+]
