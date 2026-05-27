@@ -68,9 +68,9 @@ const features = [
   },
   {
     icon: Smartphone,
-    title: "iOS & Android Apps (Soon)",
+    title: "Android App Live (iOS Soon)",
     description:
-      "Native mobile apps with push notifications and live widgets are currently in development.",
+      "Our native Android app is live on Google Play! Experience full push notifications, real-time widgets, and sleek performance.",
     color: "#38bdf8",
     size: "normal",
   },

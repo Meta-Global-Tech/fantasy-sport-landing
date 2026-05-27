@@ -33,17 +33,14 @@ export default function Download() {
         </h2>
 
         <p className="text-white/55 text-xl max-w-xl mx-auto mb-14 leading-relaxed">
-          Native iOS and Android apps are{" "}
-          <span className="text-white/80 font-medium">coming soon</span>. In the
-          meantime, enjoy the full experience via our web app at
-          app.procrick.com.
+          Our native <span className="text-gradient-green font-semibold">Android app is now live!</span> Download it today from the Google Play Store. iOS app is coming soon.
         </p>
 
         {/* Download options */}
-        <div className="flex flex-wrap justify-center gap-4 mb-16">
+        <div className="flex flex-wrap justify-center gap-6 mb-16">
           {/* App Store */}
           <div
-            className="flex items-center gap-4 px-6 py-4 rounded-2xl transition-all relative group cursor-not-allowed"
+            className="flex items-center gap-4 px-6 h-[72px] rounded-2xl transition-all relative group cursor-not-allowed"
             style={{
               background: "rgba(255,255,255,0.03)",
               border: "1px solid rgba(255,255,255,0.08)",
@@ -64,38 +61,23 @@ export default function Download() {
           </div>
 
           {/* Google Play */}
-          <div
-            className="flex items-center gap-4 px-6 py-4 rounded-2xl transition-all relative group cursor-not-allowed"
-            style={{
-              background: "rgba(255,255,255,0.03)",
-              border: "1px solid rgba(255,255,255,0.08)",
-            }}
+          <Link
+            href="https://play.google.com/store/apps/details?id=com.procrick.app"
+            target="_blank"
+            className="flex items-center transition-all card-hover h-[72px]"
           >
-            <svg viewBox="0 0 24 24" className="w-8 h-8 opacity-20">
-              <path fill="#ffffff" d="m3.18 23.76 10.45-10.45-2.94-2.94z" />
-              <path
-                fill="#ffffff"
-                d="M21.26 10.52 18.44 9l-3.44 3.44 3.43 3.43 2.84-1.54a1.9 1.9 0 0 0 0-3.81z"
-              />
-              <path fill="#ffffff" d="m3.18.24 10.45 10.45-2.94 2.94z" />
-              <path fill="#ffffff" d="M2 1.04v21.92l10.69-10.96z" />
-            </svg>
-            <div className="text-left">
-              <div className="text-white/30 text-xs">Get it on</div>
-              <div className="font-semibold text-white/30 text-lg">
-                Google Play
-              </div>
-            </div>
-            <div className="absolute -top-3 -right-3 bg-white/10 backdrop-blur-md px-3 py-1 rounded-full border border-white/10 text-[10px] font-bold tracking-widest uppercase text-white/60">
-              Soon
-            </div>
-          </div>
+            <img
+              src="/GetItOnGooglePlay_Badge_Web_color_English.svg"
+              alt="Get it on Google Play"
+              className="h-full w-auto object-contain"
+            />
+          </Link>
 
           {/* Web app */}
           <Link
             href="https://app.procrick.com"
             target="_blank"
-            className="flex items-center gap-4 px-6 py-4 rounded-2xl transition-all card-hover"
+            className="flex items-center gap-4 px-6 h-[72px] rounded-2xl transition-all card-hover"
             style={{
               background: "rgba(0,230,118,0.08)",
               border: "1px solid rgba(0,230,118,0.25)",

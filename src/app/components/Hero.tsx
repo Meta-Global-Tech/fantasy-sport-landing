@@ -140,7 +140,7 @@ export default function Hero() {
                   clipRule="evenodd"
                 />
               </svg>
-              iOS &amp; Android (Soon)
+              Android App Live (iOS Soon)
             </div>
           </div>
         </div>
