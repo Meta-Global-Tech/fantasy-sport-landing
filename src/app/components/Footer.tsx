@@ -20,7 +20,7 @@ export default function Footer() {
             </Link>
             <p className="text-white/40 text-sm leading-relaxed max-w-xs">
               The ultimate fantasy cricket platform for fans who know the game.
-              Build teams, join contests, win real cash.
+              Build teams, join contests, win TrophyToken.
             </p>
             <div className="flex gap-4 mt-6">
               <Link

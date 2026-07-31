@@ -72,10 +72,10 @@ export default function TermsPage() {
                 <p className="text-white/70 leading-relaxed font-body">
                   ProCrick is a platform for skill-based fantasy sports.
                   Participation in contests depends on your knowledge of
-                  cricket, statistical analysis, and player performance. While
-                  we offer real cash prizes, these are awarded based on the
-                  outcome of contests which are determined by the skill of the
-                  participants, not by chance.
+                  cricket, statistical analysis, and player performance.
+                  Contest prizes are awarded in TrophyToken (💎), our Web3
+                  native token, based on the outcome of contests which are
+                  determined by the skill of the participants, not by chance.
                 </p>
               </section>
 
@@ -97,14 +97,16 @@ export default function TermsPage() {
 
               <section>
                 <h2 className="font-display text-3xl mb-4 text-white">
-                  5. Wallet & Financial Transactions
+                  5. Wallet & TrophyToken Transactions
                 </h2>
                 <p className="text-white/70 leading-relaxed font-body">
-                  Deposits and withdrawals are processed through secure payment
-                  gateways. Funds in your ProCrick wallet can be used to join
-                  contests. Withdrawals are subject to verification and may take
-                  2-5 business days to process. We reserve the right to withhold
-                  payments if we suspect fraudulent activity.
+                  Your ProCrick wallet holds TrophyToken (💎). TrophyToken
+                  purchases and sales (withdrawals) are processed through
+                  secure payment gateways. TrophyToken in your ProCrick wallet
+                  can be used to join contests. Withdrawals are subject to
+                  verification and may take 2-5 business days to process. We
+                  reserve the right to withhold payments if we suspect
+                  fraudulent activity.
                 </p>
               </section>
 

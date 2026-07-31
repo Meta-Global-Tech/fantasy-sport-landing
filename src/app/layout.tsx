@@ -16,13 +16,13 @@ const dmSans = DM_Sans({
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://procrick.com"),
-  title: "ProCrick – Turn Cricket Knowledge into Real Cash",
+  title: "ProCrick – Turn Cricket Knowledge into TrophyToken",
   description:
-    "Build dream teams, join contests, watch live scores, and win real cash prizes. The #1 fantasy cricket platform for true cricket fans.",
-  keywords: "fantasy cricket, cricket contests, cricket prizes, dream team cricket, live cricket scores",
+    "Build dream teams, join skill-based contests, watch live scores, and win TrophyToken (💎), our Web3 native token. The #1 fantasy cricket platform for true cricket fans.",
+  keywords: "fantasy cricket, cricket contests, cricket prizes, TrophyToken, web3 token rewards, dream team cricket, live cricket scores",
   openGraph: {
-    title: "ProCrick – Win Real Cash with Your Cricket Knowledge",
-    description: "Fantasy cricket. Live scores. Real prizes. Join thousands of winners today.",
+    title: "ProCrick – Win TrophyToken with Your Cricket Knowledge",
+    description: "Fantasy cricket. Live scores. TrophyToken rewards. Join thousands of winners today.",
     url: "https://procrick.com",
     siteName: "ProCrick",
     type: "website",

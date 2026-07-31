@@ -57,8 +57,8 @@ export default function PrivacyPolicyPage() {
                       <strong className="text-white">
                         Financial Information:
                       </strong>{" "}
-                      Payment details for deposits and bank account details for
-                      processing withdrawals.
+                      Payment details for TrophyToken purchases and bank
+                      account details for processing TrophyToken withdrawals.
                     </li>
                     <li>
                       <strong className="text-white">Usage Data:</strong>{" "}

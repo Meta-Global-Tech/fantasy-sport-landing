@@ -131,7 +131,7 @@ export default function FairPlayPage() {
                 </p>
                 <ul className="list-disc pl-6 space-y-2 text-white/70">
                   <li>Temporary or permanent account suspension.</li>
-                  <li>Forfeiture of contest winnings and deposits.</li>
+                  <li>Forfeiture of TrophyToken winnings and balances.</li>
                   <li>Disqualification from current and future contests.</li>
                   <li>Legal action in cases of severe fraud or theft.</li>
                 </ul>

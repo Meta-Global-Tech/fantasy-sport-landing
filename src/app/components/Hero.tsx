@@ -5,7 +5,7 @@ import Link from "next/link";
 import { ArrowRight, Play, Trophy, Users, TrendingUp } from "lucide-react";
 
 const floatingStats = [
-  { label: "Prize Pool", value: "USD 200", icon: Trophy, color: "#fbbf24" },
+  { label: "Prize Pool", value: "200 💎", icon: Trophy, color: "#fbbf24" },
   {
     label: "Live Matches",
     value: "3 Active",
@@ -71,13 +71,13 @@ export default function Hero() {
             <br />
             <span className="text-gradient-green">KNOWLEDGE</span>
             <br />
-            INTO CASH
+            INTO TROPHYTOKEN
           </h1>
 
           <p className="text-white/60 text-lg leading-relaxed mb-10 max-w-md">
-            Build your dream squad, join high-stakes fantasy contests, and watch
-            your picks dominate the leaderboard — with real cash prizes on the
-            line.
+            Build your dream squad, join skill-based fantasy contests, and
+            watch your picks dominate the leaderboard — winning TrophyToken
+            (💎), our Web3 native token.
           </p>
 
           <div className="flex flex-wrap gap-4 mb-14">
@@ -125,7 +125,7 @@ export default function Hero() {
                   clipRule="evenodd"
                 />
               </svg>
-              Instant payouts
+              Instant TrophyToken payouts
             </div>
             <div className="flex items-center gap-2 text-white/50 text-sm">
               <svg
@@ -238,7 +238,7 @@ export default function Hero() {
                     className="font-bold"
                     style={{ color: "var(--green-neon)" }}
                   >
-                    USD 200
+                    200 💎
                   </div>
                 </div>
                 <div className="text-center">

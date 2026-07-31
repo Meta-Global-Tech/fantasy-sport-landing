@@ -21,9 +21,9 @@ const steps = [
   {
     number: "03",
     icon: Trophy,
-    title: "Win Real Cash Prizes",
+    title: "Win TrophyToken",
     description:
-      "Join contests, climb the leaderboard as players score, and collect your winnings. Payouts are instant, directly to your wallet.",
+      "Join contests, climb the leaderboard as players score, and collect your TrophyToken (💎) winnings. Payouts are instant, directly to your TrophyToken wallet.",
     color: "#fbbf24",
   },
 ];

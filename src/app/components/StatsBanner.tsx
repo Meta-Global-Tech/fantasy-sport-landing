@@ -1,5 +1,5 @@
 const stats = [
-  { value: "$50K+", label: "Total Prizes Paid" },
+  { value: "50K+ 💎", label: "TrophyToken Awarded" },
   { value: "1K+", label: "Active Players" },
   { value: "100+", label: "Contests Hosted" },
   // { value: "4.8★", label: "App Rating" },

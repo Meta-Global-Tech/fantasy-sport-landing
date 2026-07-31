@@ -5,7 +5,7 @@ const prizeStructure = [
   {
     rank: "1st Place",
     icon: Crown,
-    prize: "USD 100",
+    prize: "100 💎",
     color: "#fbbf24",
     bgColor: "rgba(251, 191, 36, 0.1)",
     border: "rgba(251, 191, 36, 0.25)",
@@ -13,7 +13,7 @@ const prizeStructure = [
   {
     rank: "2nd Place",
     icon: Medal,
-    prize: "USD 50",
+    prize: "50 💎",
     color: "#94a3b8",
     bgColor: "rgba(148, 163, 184, 0.08)",
     border: "rgba(148, 163, 184, 0.2)",
@@ -21,7 +21,7 @@ const prizeStructure = [
   {
     rank: "3rd Place",
     icon: Medal,
-    prize: "USD 30",
+    prize: "30 💎",
     color: "#cd7f32",
     bgColor: "rgba(205, 127, 50, 0.08)",
     border: "rgba(205, 127, 50, 0.2)",
@@ -33,21 +33,21 @@ const recentWinners = [
     name: "Sachin W.",
     team: "Team #8039",
     points: 741,
-    prize: "USD 100",
+    prize: "100 💎",
     rank: 1,
   },
   {
     name: "Aruna G.",
     team: "Team #5777",
     points: 547,
-    prize: "USD 50",
+    prize: "50 💎",
     rank: 2,
   },
   {
     name: "Anderson P.",
     team: "Team #3241",
     points: 531,
-    prize: "USD 30",
+    prize: "30 💎",
     rank: 3,
   },
   { name: "Raj P.", team: "Team #7395", points: 189, prize: "—", rank: 4 },
@@ -106,8 +106,8 @@ export default function Prizes() {
                 style={{ borderBottom: "1px solid rgba(255,255,255,0.06)" }}
               >
                 {[
-                  { label: "Prize Pool", val: "$800" },
-                  { label: "Entry Fee", val: "USD 10" },
+                  { label: "Prize Pool", val: "800 💎" },
+                  { label: "Entry Fee", val: "10 💎" },
                   { label: "Players", val: "400" },
                 ].map((item, i) => (
                   <div
@@ -221,19 +221,19 @@ export default function Prizes() {
           <div>
             <div className="section-tag mb-4">
               <Trophy size={16} />
-              Real Cash Prizes
+              Win TrophyToken
             </div>
             <h2 className="font-display text-[clamp(3rem,6vw,5.5rem)] leading-none tracking-wide mb-6">
               CLIMB THE
               <br />
               <span className="text-gradient-gold">LEADERBOARD</span>
               <br />
-              WIN CASH
+              WIN TROPHYTOKEN
             </h2>
             <p className="text-white/55 text-lg leading-relaxed mb-10">
-              Every contest has a prize pool distributed across top performers.
-              The smarter your team selection, the higher you rank — and the
-              more you earn.
+              Every contest has a TrophyToken (💎) prize pool distributed across
+              top performers. The smarter your team selection, the higher you
+              rank — and the more TrophyToken you win.
             </p>
 
             {/* Prize cards */}
